@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="24506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <device id="retina6_12" orientation="landscape" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24504"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -12,90 +13,88 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Assignment_3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="852" height="393"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="20" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="W5F-gJ-SLA">
-                                <rect key="frame" x="0.0" y="118" width="393" height="666"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="W5F-gJ-SLA">
+                                <rect key="frame" x="0.0" y="0.0" width="852" height="338"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" horizontalHuggingPriority="1" verticalHuggingPriority="249" placeholderIntrinsicWidth="393" placeholderIntrinsicHeight="170" translatesAutoresizingMaskIntoConstraints="NO" id="OvS-pF-y42" userLabel="Display View">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="170"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="852" height="120"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="SeI-cg-4yM">
-                                                <rect key="frame" x="0.0" y="0.0" width="393" height="170"/>
+                                            <stackView opaque="NO" contentMode="redraw" verticalCompressionResistancePriority="250" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="SeI-cg-4yM">
+                                                <rect key="frame" x="59" y="9" width="714" height="110"/>
                                                 <subviews>
-                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalHuggingPriority="251" verticalCompressionResistancePriority="250" ambiguous="YES" text="13 x 20 =" textAlignment="right" translatesAutoresizingMaskIntoConstraints="NO" id="pFB-qJ-f4r">
-                                                        <rect key="frame" x="0.0" y="0.0" width="393" height="82.333333333333329"/>
-                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="13x20 =" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="NuK-m8-mcG">
+                                                        <rect key="frame" x="0.0" y="0.0" width="714" height="35"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="32"/>
-                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                                    </textView>
-                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalHuggingPriority="249" verticalCompressionResistancePriority="1000" ambiguous="YES" text="260" textAlignment="right" translatesAutoresizingMaskIntoConstraints="NO" id="4No-5A-wIY">
-                                                        <rect key="frame" x="0.0" y="87.333333333333343" width="393" height="82.666666666666657"/>
-                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="260" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="HnU-4I-YQk">
+                                                        <rect key="frame" x="0.0" y="40" width="714" height="70"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="60"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="70"/>
-                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                                    </textView>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
                                                 </subviews>
                                             </stackView>
                                         </subviews>
+                                        <color key="backgroundColor" systemColor="systemGray2Color"/>
                                         <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="SeI-cg-4yM" secondAttribute="trailing" id="FEc-Im-Pg9"/>
-                                            <constraint firstItem="SeI-cg-4yM" firstAttribute="leading" secondItem="OvS-pF-y42" secondAttribute="leading" id="G4o-u4-i6X"/>
-                                            <constraint firstAttribute="bottom" secondItem="SeI-cg-4yM" secondAttribute="bottom" id="tpB-Rq-kV6"/>
-                                            <constraint firstItem="SeI-cg-4yM" firstAttribute="top" secondItem="OvS-pF-y42" secondAttribute="top" id="uej-qJ-JTA"/>
+                                            <constraint firstAttribute="bottom" secondItem="SeI-cg-4yM" secondAttribute="bottom" constant="1" id="eRf-q3-fYk"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="120" id="oI4-6S-7uQ"/>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="240" id="tBY-hH-l0w"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" horizontalHuggingPriority="1" verticalHuggingPriority="251" placeholderIntrinsicWidth="393" placeholderIntrinsicHeight="476" translatesAutoresizingMaskIntoConstraints="NO" id="7L0-We-jeC" userLabel="Button View">
-                                        <rect key="frame" x="0.0" y="190" width="393" height="476"/>
+                                    <view contentMode="scaleToFill" horizontalHuggingPriority="1" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" placeholderIntrinsicWidth="393" placeholderIntrinsicHeight="476" translatesAutoresizingMaskIntoConstraints="NO" id="7L0-We-jeC" userLabel="Button View">
+                                        <rect key="frame" x="0.0" y="121" width="852" height="217"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="TbK-3s-qRo">
-                                                <rect key="frame" x="5" y="0.0" width="383" height="476"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="TbK-3s-qRo">
+                                                <rect key="frame" x="69" y="10" width="714" height="197"/>
                                                 <subviews>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="9vN-4U-2KD">
-                                                        <rect key="frame" x="0.0" y="0.0" width="383" height="91.333333333333329"/>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="9vN-4U-2KD">
+                                                        <rect key="frame" x="0.0" y="0.0" width="714" height="33"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="boJ-dE-S0W">
-                                                                <rect key="frame" x="0.0" y="0.0" width="92" height="91.333333333333329"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="172.66666666666666" height="33"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" title="C">
                                                                     <backgroundConfiguration key="background">
-                                                                        <color key="backgroundColor" red="0.61632686853408813" green="0.78238141536712646" blue="0.92258983850479126" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <color key="backgroundColor" systemColor="systemMintColor"/>
                                                                     </backgroundConfiguration>
                                                                     <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="40"/>
                                                                     <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
                                                                 </buttonConfiguration>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xzi-2i-tTA">
-                                                                <rect key="frame" x="97" y="0.0" width="92" height="91.333333333333329"/>
+                                                                <rect key="frame" x="180.66666666666663" y="0.0" width="172.33333333333337" height="33"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" title="+/-">
                                                                     <backgroundConfiguration key="background">
-                                                                        <color key="backgroundColor" red="0.61632686853408813" green="0.78238141536712646" blue="0.92258983850479126" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <color key="backgroundColor" systemColor="systemMintColor"/>
                                                                     </backgroundConfiguration>
                                                                     <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="40"/>
                                                                     <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
                                                                 </buttonConfiguration>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qkE-V6-FxP">
-                                                                <rect key="frame" x="194" y="0.0" width="92" height="91.333333333333329"/>
+                                                                <rect key="frame" x="361" y="0.0" width="172.66666666666663" height="33"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" title="%">
                                                                     <backgroundConfiguration key="background">
-                                                                        <color key="backgroundColor" red="0.61632686853408813" green="0.78238141536712646" blue="0.92258983850479126" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <color key="backgroundColor" systemColor="systemMintColor"/>
                                                                     </backgroundConfiguration>
                                                                     <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="40"/>
                                                                     <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
                                                                 </buttonConfiguration>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R9L-2H-ghR">
-                                                                <rect key="frame" x="291" y="0.0" width="92" height="91.333333333333329"/>
+                                                                <rect key="frame" x="541.66666666666663" y="0.0" width="172.33333333333337" height="33"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" title="/">
                                                                     <backgroundConfiguration key="background">
-                                                                        <color key="backgroundColor" red="0.61632686853408813" green="0.78238141536712646" blue="0.92258983850479126" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <color key="backgroundColor" red="0.63851243257522583" green="0.47869384288787842" blue="0.90789252519607544" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     </backgroundConfiguration>
                                                                     <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="40"/>
                                                                     <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
@@ -103,48 +102,48 @@
                                                             </button>
                                                         </subviews>
                                                     </stackView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="XxL-4K-3rQ">
-                                                        <rect key="frame" x="0.0" y="96.333333333333314" width="383" height="91"/>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="XxL-4K-3rQ">
+                                                        <rect key="frame" x="0.0" y="41" width="714" height="33"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zef-fb-TY4">
-                                                                <rect key="frame" x="0.0" y="0.0" width="92" height="91"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="172.66666666666666" height="33"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" title="7">
                                                                     <backgroundConfiguration key="background">
-                                                                        <color key="backgroundColor" red="0.61632686853408813" green="0.78238141536712646" blue="0.92258983850479126" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <color key="backgroundColor" systemColor="systemMintColor"/>
                                                                     </backgroundConfiguration>
                                                                     <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="40"/>
                                                                     <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
                                                                 </buttonConfiguration>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V51-uv-dsZ">
-                                                                <rect key="frame" x="97" y="0.0" width="92" height="91"/>
+                                                                <rect key="frame" x="180.66666666666663" y="0.0" width="172.33333333333337" height="33"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" title="8">
                                                                     <backgroundConfiguration key="background">
-                                                                        <color key="backgroundColor" red="0.61632686853408813" green="0.78238141536712646" blue="0.92258983850479126" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <color key="backgroundColor" systemColor="systemMintColor"/>
                                                                     </backgroundConfiguration>
                                                                     <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="40"/>
                                                                     <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
                                                                 </buttonConfiguration>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DdH-El-STk">
-                                                                <rect key="frame" x="194" y="0.0" width="92" height="91"/>
+                                                                <rect key="frame" x="361" y="0.0" width="172.66666666666663" height="33"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" title="9">
                                                                     <backgroundConfiguration key="background">
-                                                                        <color key="backgroundColor" red="0.61632686853408813" green="0.78238141536712646" blue="0.92258983850479126" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <color key="backgroundColor" systemColor="systemMintColor"/>
                                                                     </backgroundConfiguration>
                                                                     <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="40"/>
                                                                     <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
                                                                 </buttonConfiguration>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zIG-Z8-Nw1">
-                                                                <rect key="frame" x="291" y="0.0" width="92" height="91"/>
+                                                                <rect key="frame" x="541.66666666666663" y="0.0" width="172.33333333333337" height="33"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" title="x">
                                                                     <backgroundConfiguration key="background">
-                                                                        <color key="backgroundColor" red="0.61632686853408813" green="0.78238141536712646" blue="0.92258983850479126" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <color key="backgroundColor" red="0.63851243257522583" green="0.47869384288787842" blue="0.90789252519607544" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     </backgroundConfiguration>
                                                                     <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="40"/>
                                                                     <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
@@ -152,48 +151,48 @@
                                                             </button>
                                                         </subviews>
                                                     </stackView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="kXI-xm-WrH">
-                                                        <rect key="frame" x="0.0" y="192.33333333333331" width="383" height="91.333333333333314"/>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="kXI-xm-WrH">
+                                                        <rect key="frame" x="0.0" y="82" width="714" height="33"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tvw-gu-PQm">
-                                                                <rect key="frame" x="0.0" y="0.0" width="92" height="91.333333333333329"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="172.66666666666666" height="33"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" title="4">
                                                                     <backgroundConfiguration key="background">
-                                                                        <color key="backgroundColor" red="0.61632686853408813" green="0.78238141536712646" blue="0.92258983850479126" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <color key="backgroundColor" systemColor="systemMintColor"/>
                                                                     </backgroundConfiguration>
                                                                     <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="40"/>
                                                                     <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
                                                                 </buttonConfiguration>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5DX-jC-6sb">
-                                                                <rect key="frame" x="97" y="0.0" width="92" height="91.333333333333329"/>
+                                                                <rect key="frame" x="180.66666666666663" y="0.0" width="172.33333333333337" height="33"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" title="5">
                                                                     <backgroundConfiguration key="background">
-                                                                        <color key="backgroundColor" red="0.61632686853408813" green="0.78238141536712646" blue="0.92258983850479126" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <color key="backgroundColor" systemColor="systemMintColor"/>
                                                                     </backgroundConfiguration>
                                                                     <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="40"/>
                                                                     <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
                                                                 </buttonConfiguration>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cfY-RQ-95J">
-                                                                <rect key="frame" x="194" y="0.0" width="92" height="91.333333333333329"/>
+                                                                <rect key="frame" x="361" y="0.0" width="172.66666666666663" height="33"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" title="6">
                                                                     <backgroundConfiguration key="background">
-                                                                        <color key="backgroundColor" red="0.61632686853408813" green="0.78238141536712646" blue="0.92258983850479126" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <color key="backgroundColor" systemColor="systemMintColor"/>
                                                                     </backgroundConfiguration>
                                                                     <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="40"/>
                                                                     <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
                                                                 </buttonConfiguration>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EaS-FF-Jq1">
-                                                                <rect key="frame" x="291" y="0.0" width="92" height="91.333333333333329"/>
+                                                                <rect key="frame" x="541.66666666666663" y="0.0" width="172.33333333333337" height="33"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" title="-">
                                                                     <backgroundConfiguration key="background">
-                                                                        <color key="backgroundColor" red="0.61632686853408813" green="0.78238141536712646" blue="0.92258983850479126" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <color key="backgroundColor" red="0.63851243257522583" green="0.47869384288787842" blue="0.90789252519607544" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     </backgroundConfiguration>
                                                                     <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="40"/>
                                                                     <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
@@ -201,48 +200,48 @@
                                                             </button>
                                                         </subviews>
                                                     </stackView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="3Et-6F-Fgg">
-                                                        <rect key="frame" x="0.0" y="288.66666666666663" width="383" height="91"/>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="3Et-6F-Fgg">
+                                                        <rect key="frame" x="0.0" y="123" width="714" height="33"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="poE-2p-xHC">
-                                                                <rect key="frame" x="0.0" y="0.0" width="92" height="91"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="172.66666666666666" height="33"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" title="1">
                                                                     <backgroundConfiguration key="background">
-                                                                        <color key="backgroundColor" red="0.61632686853408813" green="0.78238141536712646" blue="0.92258983850479126" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <color key="backgroundColor" systemColor="systemMintColor"/>
                                                                     </backgroundConfiguration>
                                                                     <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="40"/>
                                                                     <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
                                                                 </buttonConfiguration>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0yY-3r-L8z">
-                                                                <rect key="frame" x="97" y="0.0" width="92" height="91"/>
+                                                                <rect key="frame" x="180.66666666666663" y="0.0" width="172.33333333333337" height="33"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" title="2">
                                                                     <backgroundConfiguration key="background">
-                                                                        <color key="backgroundColor" red="0.61632686853408813" green="0.78238141536712646" blue="0.92258983850479126" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <color key="backgroundColor" systemColor="systemMintColor"/>
                                                                     </backgroundConfiguration>
                                                                     <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="40"/>
                                                                     <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
                                                                 </buttonConfiguration>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="19i-bs-3Eg">
-                                                                <rect key="frame" x="194" y="0.0" width="92" height="91"/>
+                                                                <rect key="frame" x="361" y="0.0" width="172.66666666666663" height="33"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" title="3">
                                                                     <backgroundConfiguration key="background">
-                                                                        <color key="backgroundColor" red="0.61632686853408813" green="0.78238141536712646" blue="0.92258983850479126" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <color key="backgroundColor" systemColor="systemMintColor"/>
                                                                     </backgroundConfiguration>
                                                                     <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="40"/>
                                                                     <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
                                                                 </buttonConfiguration>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pu7-a7-oLO">
-                                                                <rect key="frame" x="291" y="0.0" width="92" height="91"/>
+                                                                <rect key="frame" x="541.66666666666663" y="0.0" width="172.33333333333337" height="33"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" title="+">
                                                                     <backgroundConfiguration key="background">
-                                                                        <color key="backgroundColor" red="0.61632686853408813" green="0.78238141536712646" blue="0.92258983850479126" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <color key="backgroundColor" red="0.63851243257522583" green="0.47869384288787842" blue="0.90789252519607544" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     </backgroundConfiguration>
                                                                     <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="40"/>
                                                                     <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
@@ -250,29 +249,29 @@
                                                             </button>
                                                         </subviews>
                                                     </stackView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="0TP-v6-gO6">
-                                                        <rect key="frame" x="0.0" y="384.66666666666663" width="383" height="91.333333333333314"/>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="0TP-v6-gO6">
+                                                        <rect key="frame" x="0.0" y="164" width="714" height="33"/>
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Vj0-00-A3c">
-                                                                <rect key="frame" x="0.0" y="0.0" width="189" height="91.333333333333329"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="353" height="33"/>
                                                                 <subviews>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ggV-hz-e21">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="92" height="91.333333333333329"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="174" height="33"/>
                                                                         <state key="normal" title="Button"/>
                                                                         <buttonConfiguration key="configuration" style="plain" title="0">
                                                                             <backgroundConfiguration key="background">
-                                                                                <color key="backgroundColor" red="0.61632686853408813" green="0.78238141536712646" blue="0.92258983850479126" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                <color key="backgroundColor" systemColor="systemMintColor"/>
                                                                             </backgroundConfiguration>
                                                                             <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="40"/>
                                                                             <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
                                                                         </buttonConfiguration>
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wvi-mf-lMW">
-                                                                        <rect key="frame" x="97" y="0.0" width="92" height="91.333333333333329"/>
+                                                                        <rect key="frame" x="179" y="0.0" width="174" height="33"/>
                                                                         <state key="normal" title="Button"/>
                                                                         <buttonConfiguration key="configuration" style="plain" title=".">
                                                                             <backgroundConfiguration key="background">
-                                                                                <color key="backgroundColor" red="0.61632686853408813" green="0.78238141536712646" blue="0.92258983850479126" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                <color key="backgroundColor" systemColor="systemMintColor"/>
                                                                             </backgroundConfiguration>
                                                                             <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="40"/>
                                                                             <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
@@ -281,11 +280,11 @@
                                                                 </subviews>
                                                             </stackView>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bJk-a3-S7S">
-                                                                <rect key="frame" x="194" y="0.0" width="189" height="91.333333333333329"/>
+                                                                <rect key="frame" x="361" y="0.0" width="353" height="33"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" title="=">
                                                                     <backgroundConfiguration key="background">
-                                                                        <color key="backgroundColor" red="0.61632686853408813" green="0.78238141536712646" blue="0.92258983850479126" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <color key="backgroundColor" red="0.63851243257522583" green="0.47869384288787842" blue="0.90789252519607544" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     </backgroundConfiguration>
                                                                     <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="40"/>
                                                                     <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
@@ -296,34 +295,31 @@
                                                 </subviews>
                                             </stackView>
                                         </subviews>
+                                        <color key="backgroundColor" red="0.84603720903396606" green="0.894878089427948" blue="0.95807331800460815" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="bottom" secondItem="TbK-3s-qRo" secondAttribute="bottom" id="7KF-7L-2Xn"/>
-                                            <constraint firstItem="TbK-3s-qRo" firstAttribute="top" secondItem="7L0-We-jeC" secondAttribute="top" id="C6R-5X-Kjw"/>
-                                            <constraint firstItem="TbK-3s-qRo" firstAttribute="leading" secondItem="7L0-We-jeC" secondAttribute="leading" constant="5" id="CFI-Ch-VaW"/>
-                                            <constraint firstAttribute="trailing" secondItem="TbK-3s-qRo" secondAttribute="trailing" constant="5" id="TkC-l6-ptr"/>
-                                            <constraint firstItem="TbK-3s-qRo" firstAttribute="leading" secondItem="7L0-We-jeC" secondAttribute="leading" constant="5" id="VAZ-l3-4Dd"/>
-                                            <constraint firstItem="TbK-3s-qRo" firstAttribute="leading" secondItem="7L0-We-jeC" secondAttribute="leading" id="VVn-re-afE"/>
-                                            <constraint firstAttribute="trailing" secondItem="TbK-3s-qRo" secondAttribute="trailing" id="cmK-sP-veS"/>
-                                            <constraint firstAttribute="trailing" secondItem="TbK-3s-qRo" secondAttribute="trailing" constant="5" id="js2-I3-yLT"/>
+                                            <constraint firstAttribute="bottom" secondItem="TbK-3s-qRo" secondAttribute="bottom" constant="10" id="gfQ-kc-1pT"/>
+                                            <constraint firstItem="TbK-3s-qRo" firstAttribute="top" secondItem="7L0-We-jeC" secondAttribute="top" constant="10" id="o2a-Wb-vgW"/>
                                         </constraints>
                                     </view>
                                 </subviews>
+                                <color key="backgroundColor" systemColor="systemGray5Color"/>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="7L0-We-jeC" secondAttribute="bottom" id="KJJ-nL-zDL"/>
-                                    <constraint firstAttribute="trailing" secondItem="7L0-We-jeC" secondAttribute="trailing" id="WSS-no-byo"/>
-                                    <constraint firstItem="7L0-We-jeC" firstAttribute="top" secondItem="OvS-pF-y42" secondAttribute="bottom" id="fan-7i-Ftd"/>
-                                    <constraint firstItem="7L0-We-jeC" firstAttribute="top" secondItem="OvS-pF-y42" secondAttribute="bottom" id="sRJ-C2-Dnv"/>
-                                    <constraint firstItem="7L0-We-jeC" firstAttribute="leading" secondItem="W5F-gJ-SLA" secondAttribute="leading" id="wDq-KG-BXc"/>
+                                    <constraint firstItem="OvS-pF-y42" firstAttribute="leading" secondItem="W5F-gJ-SLA" secondAttribute="leading" id="1tp-ns-Pqt"/>
+                                    <constraint firstAttribute="trailing" secondItem="OvS-pF-y42" secondAttribute="trailing" id="M1h-pC-igb"/>
                                 </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" red="0.76291221380233765" green="0.77531343698501587" blue="0.93695944547653198" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.84603720903396606" green="0.894878089427948" blue="0.95807331800460815" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="W5F-gJ-SLA" secondAttribute="top" id="An1-H9-1a1"/>
-                            <constraint firstItem="W5F-gJ-SLA" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="JAX-7e-lFE"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="W5F-gJ-SLA" secondAttribute="trailing" id="rMk-Zo-bd8"/>
-                            <constraint firstItem="W5F-gJ-SLA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="znm-LL-7m0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="leading" secondItem="SeI-cg-4yM" secondAttribute="leading" id="81M-99-oNl"/>
+                            <constraint firstItem="W5F-gJ-SLA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="BPd-V5-Mka"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SeI-cg-4yM" secondAttribute="trailing" constant="20" id="JfH-2R-Zs9"/>
+                            <constraint firstItem="TbK-3s-qRo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="UWT-D6-4Cr"/>
+                            <constraint firstItem="W5F-gJ-SLA" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="WPo-4q-tku"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="W5F-gJ-SLA" secondAttribute="bottom" id="aHt-4N-i8m"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TbK-3s-qRo" secondAttribute="trailing" constant="10" id="psc-bJ-F81"/>
+                            <constraint firstItem="W5F-gJ-SLA" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="uui-PR-fE1"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -335,6 +331,15 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemMintColor">
+            <color red="0.0" green="0.78039215689999997" blue="0.74509803919999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
